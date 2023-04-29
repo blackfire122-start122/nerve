@@ -5,5 +5,5 @@ import (
 )
 
 func SetRouters(router *gin.Engine) {
-	router.GET("/home", Home)
+	router.GET("/", Home)
 }

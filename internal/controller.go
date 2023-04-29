@@ -8,5 +8,5 @@ import (
 
 func Home(c *gin.Context) {
 	//ErrorLogger.Println(err.Error())
-	c.JSON(http.StatusOK, nil)
+	c.HTML(http.StatusOK, "index.html", nil)
 }
