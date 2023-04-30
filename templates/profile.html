@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="/static/css/profile.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Profile</h1>
+        <div class="profile">
+            <div class="profile-image">
+                <img src="" id="userImage" alt="User Image">
+                <button class="start-stream-btn">Start Stream</button>
+            </div>
+            <div class="profile-info">
+                <div class="username">
+                    <label for="username">Username:</label>
+                    <span id="username"></span>
+                    <button class="change-data-btn">Change Data</button>
+                </div>
+                <div class="phone">
+                    <label for="phone">Phone:</label>
+                    <span id="phone"></span>
+                </div>
+                <div class="email">
+                    <label for="email">Email:</label>
+                    <span id="email"></span>
+                </div>
+            </div>
+        </div>
+        <div class="tasks">
+            <h2>Tasks</h2>
+            <ul id="task-list">
+
+            </ul>
+        </div>
+        <div class="change-data-form hidden">
+            <form id="change-data-form">
+                <h2>Change Data</h2>
+                <label for="new-username">New Username:</label>
+                <input type="text" id="new-username" name="new-username">
+                <label for="new-phone">New Phone:</label>
+                <input type="text" id="new-phone" name="new-phone">
+                <label for="new-email">New Email:</label>
+                <input type="email" id="new-email" name="new-email">
+                <label for="new-image" class="custom-file-upload">
+                    <i class="fa fa-cloud-upload"></i> Завантажити зображення
+                </label>
+                <input type="file" id="new-image" name="new-image">
+                <button type="submit">Save Changes</button>
+            </form>
+        </div>
+    </div>
+    <script src="/static/js/profile.js"></script>
+</body>
+</html>
